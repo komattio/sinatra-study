@@ -11,3 +11,11 @@ get '/erb-sample' do
     erb :index
 end
 
+post '/sendtext' do
+    @title = "send message"
+    @message = params[:message]
+    p @title
+    p @message
+    erb :index
+end
+
