@@ -19,3 +19,7 @@ get '/download/*.*' do |path, extl|
     [path]
 end
 
+get '/hello/:fname/?:lname?' do |f, l|
+    "hello #{f} #{l}."
+end
+
