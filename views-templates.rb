@@ -6,3 +6,8 @@ get '/' do
     erb code
 end
 
+get '/erb-sample' do
+    @title = "ハローワールド"
+    erb :index
+end
+
